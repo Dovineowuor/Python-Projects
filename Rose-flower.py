@@ -1,4 +1,5 @@
 import turtle
+<<<<<<< HEAD
  
 # Set initial position
 turtle.penup ()
@@ -17,6 +18,15 @@ turtle.begin_fill ()
 
 turtle.circle (10,180)
 
+=======
+                                                           # Set initial position                                     turtle.penup ()
+                                                           turtle.left (90)
+                                                           turtle.fd (200)                                            turtle.pendown ()
+                                                           turtle.right (90)
+                                                           # flower base                                              
+turtle.fillcolor ("red")                                   turtle.begin_fill ()
+                                                           turtle.circle (10,180)                                     
+>>>>>>> 3d0446158f0055a7c98f0b6339bbe4dfa3824b63
 turtle.circle (25,110)
 
 turtle.left (50)
@@ -63,7 +73,11 @@ turtle.left (50)
 
 turtle.circle (150,90)
 turtle.end_fill ()
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 3d0446158f0055a7c98f0b6339bbe4dfa3824b63
 # Petal 1
 
 turtle.left (150)
@@ -79,7 +93,11 @@ turtle.setheading (60)
 turtle.circle (80,98)
 
 turtle.circle (-90,40)
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 3d0446158f0055a7c98f0b6339bbe4dfa3824b63
 # Petal 2
 
 turtle.left (180)
@@ -89,7 +107,11 @@ turtle.circle (90,40)
 turtle.circle (-80,98)
 
 turtle.setheading (-83)
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 3d0446158f0055a7c98f0b6339bbe4dfa3824b63
 # Leaves 1
 
 turtle.fd (30)
@@ -121,7 +143,11 @@ turtle.fd (85)
 turtle.left (90)
 
 turtle.fd (80)
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 3d0446158f0055a7c98f0b6339bbe4dfa3824b63
 # Leaves 2
 
 turtle.right (90)
@@ -150,4 +176,8 @@ turtle.right (90)
 
 turtle.circle (200,60)
 turtle.done()
+<<<<<<< HEAD
 #Program Designed by Eng. Dove 
+=======
+#Program Designed by Eng. Dove
+>>>>>>> 3d0446158f0055a7c98f0b6339bbe4dfa3824b63
