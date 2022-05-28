@@ -5,7 +5,7 @@ for i in range(0, rows):
         print(end=" ")
     k = k - 1
     for j in range(0, i + 1):
-        print("* ", end="")
+        print("+ ", end="")
     print("")
     
 k = rows - 2
