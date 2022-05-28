@@ -1,0 +1,12 @@
+[
+    {
+        "question": "How many bits are in a byte??",
+        "answers": ["4", "8", "2"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "How many devices can be supported by a USB bus??",
+        "answers": ["4","100", "127"],
+        "correctAnswer": 2
+    }
+]
