@@ -2,7 +2,7 @@
 from tkinter import Entry, StringVar
 from tkinter import * 
 # From the  installed Pytube module, import the youtube library
-from pytube import YouTube 
+from Pytube import YouTube 
 root = Tk()
 root.geometry('500 X 300') # Size of the window
 root.resizable(0, 0) # makes the window adjustable with its features
