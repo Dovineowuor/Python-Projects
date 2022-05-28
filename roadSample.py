@@ -1,3 +1,6 @@
+from turtle import clear
+
+
 def load_road_network(filename):
     # Open the file containing the intersection and roads info
     f = open(filename)
@@ -62,3 +65,5 @@ def load_road_network(filename):
 
     # return the dictionaries
     return intersections, roads_cost
+
+load_road_network(filename)
