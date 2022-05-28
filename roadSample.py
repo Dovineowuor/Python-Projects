@@ -66,4 +66,5 @@ def load_road_network(filename):
     # return the dictionaries
     return intersections, roads_cost
 
-load_road_network(filename)
+load_road_network()
+
