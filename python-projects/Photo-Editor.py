@@ -7,8 +7,8 @@ from PIL import Image, ImageTk, ImageFilter, ImageEnhance, ImageOps
 import os
 # contrast border thumbnail 
 root = Tk()
-root.title("Simple Photo Editor")
-root.geometry("640x640")
+root.title("Dovetec.org Photo Editor")
+root.geometry("1700x640")
 # create functions
 def selected():
     global img_path, img
