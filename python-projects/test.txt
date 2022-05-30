@@ -1,0 +1,3 @@
+we will read a text file with multiple lines and count the number of words in it. Consider the following text file.
+
+New line character separates lines in a text file. New line is a white space character and when we split the whole data in text file using split() method, all the words in all the sentences are split and returned as a single list.
