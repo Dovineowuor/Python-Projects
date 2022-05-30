@@ -1,7 +1,4 @@
-from fileinput import filename
-
-
-file = open(filename, "rt")
+file = open("C:\test.txt", "rt")
 data = file.read()
 words = data.split()
 
