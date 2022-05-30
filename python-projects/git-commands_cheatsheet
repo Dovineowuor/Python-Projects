@@ -1,0 +1,5 @@
+git rev-list HEAD --count
+Counts the number of commits printing the total commits
+git shortlog | grep -E '^[^ ]'
+outputs the total commits per contributor
+
