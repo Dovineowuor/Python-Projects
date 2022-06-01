@@ -1,83 +1,105 @@
 <html>
+
 <head>
-<meta charset="UTF-8"> 
-<title>Chessboard using Pure CSS and HTML</title>
-<link rel="stylesheet" href="style.css" type="text/css">
+  <meta charset="UTF-8">
+  <title>Chessboard using Pure CSS and HTML</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+  </script>
 </head>
+
 <body>
-<div class="chessboard">
-<!-- 1st -->
-<div class="white">&#9820;</div>
-<div class="green">&#9822;</div>
-<div class="white">&#9821;</div>
-<div class="green">&#9819;</div>
-<div class="white">&#9818;</div>
-<div class="green">&#9821;</div>
-<div class="white">&#9822;</div>
-<div class="green">&#9820;</div>
-<!-- 2nd -->
-<div class="green">&#9821;</div>
-<div class="white">&#9821;</div>
-<div class="green">&#9821;</div>
-<div class="white">&#9821;</div>
-<div class="green">&#9821;</div>
-<div class="white">&#9821;</div>
-<div class="green">&#9821;</div>
-<div class="white">&#9821;</div>
-<!-- 3rd -->
-<div class="white"></div>
-<div class="green"></div>
-<div class="white"></div>
-<div class="green"></div>
-<div class="white"></div>
-<div class="green"></div>
-<div class="white"></div>
-<div class="green"></div>
-<!-- 4th -->
-<div class="green"></div>
-<div class="white"></div>
-<div class="green"></div>
-<div class="white"></div>
-<div class="green"></div>
-<div class="white"></div>
-<div class="green"></div>
-<div class="white"></div>
-<!-- 5th -->
-<div class="white"></div>
-<div class="green"></div>
-<div class="white"></div>
-<div class="green"></div>
-<div class="white"></div>
-<div class="green"></div>
-<div class="white"></div>
-<div class="green"></div>
-<!-- 6th -->
-<div class="green"></div>
-<div class="white"></div>
-<div class="green"></div>
-<div class="white"></div>
-<div class="green"></div>
-<div class="white"></div>
-<div class="green"></div>
-<div class="white"></div>
-<!-- 7th -->
-<div class="white">&#9817;</div>
-<div class="green">&#9817;</div>
-<div class="white">&#9817;</div>
-<div class="green">&#9817;</div>
-<div class="white">&#9817;</div>
-<div class="green">&#9817;</div>
-<div class="white">&#9817;</div>
-<div class="green">&#9817;</div>
-<!-- 8th -->
-<div class="green">&#9814;</div>
-<div class="white">&#9816;</div>
-<div class="green">&#9815;</div>
-<div class="white">&#9813;</div>
-<div class="green">&#9812;</div>
-<div class="white">&#9815;</div>
-<div class="green">&#9816;</div>
-<div class="white">&#9814;</div>
-</div>
+  
+    <div class="chessboard">
+      <!-- 1st -->
+      <div draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div class="white">&#9820;</div>
+      <div class="green">&#9822;</div>
+      <div class="white">&#9821;</div>
+      <div class="green">&#9819;</div>
+      <div class="white">&#9818;</div>
+      <div class="green">&#9821;</div>
+      <div class="white">&#9822;</div>
+      <div class="green">&#9820;</div>
+      <!-- 2nd -->
+      <div class="green">&#9821;</div>
+      <div class="white">&#9821;</div>
+      <div class="green">&#9821;</div>
+      <div class="white">&#9821;</div>
+      <div class="green">&#9821;</div>
+      <div class="white">&#9821;</div>
+      <div class="green">&#9821;</div>
+      <div class="white">&#9821;</div>
+      <div>
+        <!-- 3rd -->
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <!-- 4th -->
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <!-- 5th -->
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <!-- 6th -->
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <!-- 7th -->
+        <div class="white">&#9817;</div>
+        <div class="green">&#9817;</div>
+        <div class="white">&#9817;</div>
+        <div class="green">&#9817;</div>
+        <div class="white">&#9817;</div>
+        <div class="green">&#9817;</div>
+        <div class="white">&#9817;</div>
+        <div class="green">&#9817;</div>
+        <!-- 8th -->
+        <div class="green">&#9814;</div>
+        <div class="white">&#9816;</div>
+        <div class="green">&#9815;</div>
+        <div class="white">&#9813;</div>
+        <div class="green">&#9812;</div>
+        <div class="white">&#9815;</div>
+        <div class="green">&#9816;</div>
+        <div class="white">&#9814;</div>
+      </div>
+<div></div>
 </body>
+
 </html>
