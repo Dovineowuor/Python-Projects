@@ -23,6 +23,7 @@ while True:
   print()
 
   if user_choice == 'rock':
+      
     if cpu_choice == 'rock':
       print("It's a tie!")
     elif cpu_choice == 'scissors':
