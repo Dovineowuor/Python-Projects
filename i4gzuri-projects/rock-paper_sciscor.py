@@ -13,7 +13,7 @@ while True:
   random_index = random.randint(0,2)
   cpu_choice = choices[random_index]
 
-  user_choice = input("Rock, Paper, or Scissors? ").lower()
+  user_choice = input("R, P, or S? ").lower()
   while user_choice not in choices:
     user_choice = input("That is not a valid choice. Please try again: ").lower()
   
@@ -24,30 +24,30 @@ while True:
 
   if user_choice == 'rock':
       
-    if cpu_choice == 'rock':
+    if cpu_choice == 'R':
       print("It's a tie!")
-    elif cpu_choice == 'scissors':
+    elif cpu_choice == 'S':
       print("You win!")
       user_wins+=1
-    elif cpu_choice == 'paper':
+    elif cpu_choice == 'P':
       print("You lose!")
       computer_wins+=1
-  elif user_choice == 'paper':
-    if cpu_choice == 'paper':
+  elif user_choice == 'P':
+    if cpu_choice == 'P':
       print("It's a tie!")
-    elif cpu_choice == 'rock':
+    elif cpu_choice == 'R':
       print("You win!")
       user_wins+=1
-    elif cpu_choice == 'scissors':
+    elif cpu_choice == 'S':
       print("You lose!")
       computer_wins+=1
-  elif user_choice == 'scissors':
-    if cpu_choice == 'scissors':
+  elif user_choice == 'S':
+    if cpu_choice == 'S':
       print("It's a tie!")
-    elif cpu_choice == 'paper':
+    elif cpu_choice == 'P':
       print("You win!")
       user_wins+=1
-    elif cpu_choice == 'rock':
+    elif cpu_choice == 'R':
       print("You lose!")
       computer_wins+=1
 
