@@ -8,7 +8,7 @@ import os
 # contrast border thumbnail 
 root = Tk()
 root.title("Dovetec.org Photo Editor")
-root.geometry("640x640")
+root.geometry("1700x640")
 # create functions
 def selected():
     global img_path, img
